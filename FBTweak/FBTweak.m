@@ -8,9 +8,10 @@
  */
 
 #import "FBTweak.h"
+#import "WeakMutableSet.h"
 
 @implementation FBTweak {
-  NSHashTable *_observers;
+  WeakMutableSet *_observers;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)coder
@@ -85,7 +86,7 @@
     _currentValue = currentValue;
     [[NSUserDefaults standardUserDefaults] setObject:_currentValue forKey:_identifier];
     
-    for (id<FBTweakObserver> observer in [_observers setRepresentation]) {
+    for (id<FBTweakObserver> observer in _observers) {
       [observer tweakDidChange:self];
     }
   }
@@ -94,7 +95,7 @@
 - (void)addObserver:(id<FBTweakObserver>)observer
 {
   if (_observers == nil) {
-    _observers = [NSHashTable weakObjectsHashTable];
+    _observers = [WeakMutableSet new];
   }
   
   NSAssert(observer != nil, @"observer is required");

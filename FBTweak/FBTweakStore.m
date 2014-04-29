@@ -64,7 +64,7 @@
 
 - (FBTweakCategory *)tweakCategoryWithName:(NSString *)name
 {
-  return _namedCategories[name];
+  return [_namedCategories objectForKey:name];
 }
 
 - (void)addTweakCategory:(FBTweakCategory *)category

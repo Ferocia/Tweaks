@@ -50,7 +50,7 @@
 
 - (FBTweakCollection *)tweakCollectionWithName:(NSString *)name
 {
-  return _namedCollections[name];
+  return [_namedCollections objectForKey:name];
 }
 
 - (NSArray *)tweakCollections

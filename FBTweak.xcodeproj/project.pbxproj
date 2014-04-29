@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F66408190F3F29002FECCA /* WeakMutableSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F66406190F3F29002FECCA /* WeakMutableSet.h */; };
+		03F66409190F3F29002FECCA /* WeakMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F66407190F3F29002FECCA /* WeakMutableSet.m */; };
 		184A94F018D26871005F2774 /* _FBTweakBindObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 184A94EE18D26871005F2774 /* _FBTweakBindObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184A94F118D26871005F2774 /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A94EF18D26871005F2774 /* _FBTweakBindObserver.m */; };
 		18EFE472189EBA4900DA6A5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE471189EBA4900DA6A5D /* Foundation.framework */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03F66406190F3F29002FECCA /* WeakMutableSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakMutableSet.h; sourceTree = "<group>"; };
+		03F66407190F3F29002FECCA /* WeakMutableSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakMutableSet.m; sourceTree = "<group>"; };
 		184A94EE18D26871005F2774 /* _FBTweakBindObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakBindObserver.h; sourceTree = "<group>"; };
 		184A94EF18D26871005F2774 /* _FBTweakBindObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakBindObserver.m; sourceTree = "<group>"; };
 		18EFE46E189EBA4900DA6A5D /* libFBTweak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBTweak.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +198,8 @@
 				18EFE526189F19B300DA6A5D /* FBTweakCategory.m */,
 				18EFE4BF189EBEAD00DA6A5D /* FBTweakStore.h */,
 				18EFE4C0189EBEAD00DA6A5D /* FBTweakStore.m */,
+				03F66406190F3F29002FECCA /* WeakMutableSet.h */,
+				03F66407190F3F29002FECCA /* WeakMutableSet.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				18EFE4D5189EEBC500DA6A5D /* _FBTweakCategoryViewController.h in Headers */,
 				18EFE4D9189EEED800DA6A5D /* _FBTweakCollectionViewController.h in Headers */,
 				18EFE4B4189EBAC200DA6A5D /* FBTweakViewController.h in Headers */,
+				03F66408190F3F29002FECCA /* WeakMutableSet.h in Headers */,
 				18EFE4C1189EBEAD00DA6A5D /* FBTweakStore.h in Headers */,
 				18EFE4B2189EBAC200DA6A5D /* FBTweakInline.h in Headers */,
 				18EFE4B3189EBAC200DA6A5D /* FBTweakShakeWindow.h in Headers */,
@@ -332,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EFE4A7189EBA9E00DA6A5D /* FBTweakViewController.m in Sources */,
+				03F66409190F3F29002FECCA /* WeakMutableSet.m in Sources */,
 				18EFE4BD189EBC4B00DA6A5D /* FBTweakCollection.m in Sources */,
 				18EFE4C2189EBEAD00DA6A5D /* FBTweakStore.m in Sources */,
 				18EFE4AB189EBAAD00DA6A5D /* FBTweakInline.m in Sources */,
@@ -408,7 +416,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(SYMROOT)/Headers";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PUBLIC_HEADERS_FOLDER_PATH = "../Headers/$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -442,7 +450,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "$(SYMROOT)/Headers";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PUBLIC_HEADERS_FOLDER_PATH = "../Headers/$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

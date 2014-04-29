@@ -50,7 +50,7 @@
 
 - (FBTweak *)tweakWithIdentifier:(NSString *)identifier
 {
-  return _identifierTweaks[identifier];
+  return [_identifierTweaks objectForKey:identifier];
 }
 
 - (NSArray *)tweaks

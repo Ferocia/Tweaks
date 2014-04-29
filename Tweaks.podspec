@@ -10,6 +10,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.social_media_url = 'https://twitter.com/fbOpenSource'
   spec.framework = 'MessageUI'
-  
-  spec.ios.deployment_target = '6.0'
+
+  spec.ios.deployment_target = '5.0'
 end
